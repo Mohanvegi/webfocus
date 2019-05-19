@@ -3,6 +3,7 @@ import { FormControl } from "@angular/forms";
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedService } from './shared.service';
 
 @NgModule({
   imports: [

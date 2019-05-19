@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatAutocompleteModule, MatInputModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import { StaticComponent } from './static/static.component';
+import { SharedService } from './shared.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { StaticComponent } from './static/static.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
